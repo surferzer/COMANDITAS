@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <script src="index.js"></script>
     <link href="QuestionsStyle.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
 </head>
@@ -10,8 +11,10 @@
 
 <body>
     <app-header></app-header>
-
+<div class= "titleP">
 <h1>PREGUNTAS FRECUENTES (FAQ's)</h1>
+</div>
+
 
 <section class="temas">
 <h1>Accesos directos</h1>
@@ -28,5 +31,16 @@
 
 </section>
 
+<section class= "QuestionsBody"></section>
+<div class="titulo_boton">
+    Información adicional
+  <a style='cursor: pointer;' onClick="muestra_oculta('contenido')" title="" class="boton_mostrar">Mostrar / Ocultar</a>
+</div>
+
+<div id="contenido">
+<p>Aquí va el contenido a mostrar<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+</div>
+
+</section>
 
 </body>
