@@ -30,7 +30,7 @@ h1{
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 16px;
+    font-size: 100%;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -58,20 +58,22 @@ h1{
 }
 
  .titulo_boton {
-    float:left; 
+    float: inline-start; 
     padding:1%;  
     background-color: gainsboro;
-    width:400px;
+    width:40%;
     font-family:'Darker Grotesque', sans-serif;
     font-size:100%;
     font-weight:bold;
     margin-left: 5%;
     vertical-align: middle;
+    border-radius: 10px 10px 10px 10px;
+    
    }
  
    .boton_mostrar {
-    float:right;
-    font-size:200%;
+    float: right;
+    font-size:250%;
     line-height:10%;
     /*color:#DE7217;*/
     color: rosybrown;
@@ -84,10 +86,10 @@ h1{
     border:2px solid #e6e6e6;
     margin-left: 5%;
     padding:3%;
-    width: 25%;
+    width: 30%;
     overflow:auto;
     font-family:'Darker Grotesque', sans-serif;
-    font-size:100%;
+    font-size:120%;
     text-align: justify;
     }
 
