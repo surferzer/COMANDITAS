@@ -29,7 +29,7 @@ h1{
     padding: 5%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
@@ -48,31 +48,33 @@ h1{
 
  .titulo_boton {
     float:left; 
-    padding:5px;  
+    padding:1%;  
     background-color:#e6e6e6;
     width:400px;
-    font-family:helvetica;
+    font-family:'Darker Grotesque', sans-serif;
     font-size:16px;
     font-weight:bold;
+    margin-left: 5%;
    }
  
    .boton_mostrar {
     float:right;
-    font-size:12px;
-    line-height:20px;
+    font-size:200%;
+    line-height:10%;
     color:#DE7217;
+    vertical-align: super;
    }
  
    #contenido{
     float:left;
-    clear:both;
+    /*clear:both;*/
     border:2px solid #e6e6e6;
-    margin-top:2px;
-    padding:5px;
-    width:396px;
+    margin-left: 5%;
+    padding:3%;
+    width: 25%;
     overflow:auto;
-    font-family:helvetica;
-    font-size:14px;
+    font-family:'Darker Grotesque', sans-serif;
+    font-size:100%;
     text-align: justify;
     }
 
