@@ -23,7 +23,7 @@ h1{
 
 .subtemas{
 
-    background-color: darkgray;
+    background-color: rosybrown;
     border: none;
     color: white;
     padding: 5%;
@@ -45,24 +45,37 @@ h1{
 .subtemas:hover{
     background-color: #e7e7e7;}
 
+.QuestionsBody{
+    float: inline-start;
+    border-radius: 10px 10px 10px 10px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300%;
+    position: relative;
+    margin-top: 10%;
+    
+
+}
 
  .titulo_boton {
     float:left; 
     padding:1%;  
-    background-color:#e6e6e6;
+    background-color: gainsboro;
     width:400px;
     font-family:'Darker Grotesque', sans-serif;
-    font-size:16px;
+    font-size:100%;
     font-weight:bold;
     margin-left: 5%;
+    vertical-align: middle;
    }
  
    .boton_mostrar {
     float:right;
     font-size:200%;
     line-height:10%;
-    color:#DE7217;
-    vertical-align: super;
+    /*color:#DE7217;*/
+    color: rosybrown;
+    vertical-align: middle;
    }
  
    #contenido{
