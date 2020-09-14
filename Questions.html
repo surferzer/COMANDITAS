@@ -11,52 +11,91 @@
 
 <body>
     <app-header></app-header>
-<div class= "titleP">
-<h1>PREGUNTAS FRECUENTES (FAQ's)</h1>
-</div>
-
-
-<section class="temas">
-<h1>Accesos directos</h1>
-<input type= button class= "subtemas" value= "Información General"></button> <br>
-<input type= button class= "subtemas" value= "Requisitos"></button> <br>
-<input type= button class= "subtemas" value= "Pasos a seguir"></button> <br>
-<input type= button class= "subtemas" value= "Solicitudes/Estatus"></button> <br>
-<input type= button class= "subtemas" value= "Depósito de mi adelanto"></button> <br>
-<input type= button class= "subtemas" value= "Información de pago"></button> <br>
-<input type= button class= "subtemas" value= "Motivos de rechazo"></button> <br>
-<input type= button class= "subtemas" value= "Errores en la Plataforma"></button> <br>
-<input type= button class= "subtemas" value= "Días y horarios de atención"></button> <br>
-
-
-</section>
-
-<section class= "QuestionsBody"></section>
-<div id= "1" class="titulo_boton">
-    ¿Qué es IXHUA?
-  <a style='cursor: pointer;' onClick="muestra_oculta('contenido1')" title="" class="boton_mostrar">  +  </a>
-</div>
-
-<div id="contenido1" class="contenido">
-<p>Ixhua es una compañía tecnológica con un propósito principal: Hacer que los empleados de México tengan acceso al adelanto 
-    de una parte de su nómina de una manera fácil y sobre todo, justa.
-    Es por eso que creamos una plataforma amigable y rápida para que todos puedan acceder a nuestro servicio en minutos.</p>
+    <div class="titleP">
+        <h1>PREGUNTAS FRECUENTES (FAQ's)</h1>
     </div>
-<br>
-    <div id= "2" class="titulo_boton">
+
+    <!--ACCESOS DIRECTOS-->
+
+    <section class="temas">
+        <h1>Accesos directos</h1>
+        <input type=button class="subtemas" value="Información General"></button> <br>
+        <input type=button class="subtemas" value="Requisitos"></button> <br>
+        <input type=button class="subtemas" value="Pasos a seguir" onClick="redireccionarPagina()"></button> <br>
+        <input type=button class="subtemas" value="Solicitudes/Estatus"></button> <br>
+        <input type=button class="subtemas" value="Depósito de mi adelanto"></button> <br>
+        <input type=button class="subtemas" value="Información de pago"></button> <br>
+        <input type=button class="subtemas" value="Motivos de rechazo"></button> <br>
+        <input type=button class="subtemas" value="Errores en la Plataforma"></button> <br>
+        <input type=button class="subtemas" value="Días y horarios de atención"></button> <br>
+
+        <!--PREGUNTAS-->
+
+    </section>
+
+    <section class="QuestionsBody"></section>
+
+    <!--PREGUNTA NUMERO 1-->
+
+    <div id="1" class="titulo_boton">
+        ¿Qué es IXHUA?
+        <a style='cursor: pointer;' onClick="muestra_oculta('contenido1')" title="" class="boton_mostrar"> + </a>
+    </div>
+
+    <div id="contenido1" class="contenido">
+        <p>Ixhua es una compañía tecnológica con un propósito principal: Hacer que los empleados de México tengan acceso
+            al adelanto
+            de una parte de su nómina de una manera fácil y sobre todo, justa.
+            Es por eso que creamos una plataforma amigable y rápida para que todos puedan acceder a nuestro servicio en
+            minutos.</p>
+    </div>
+    <br>
+
+    <!--PREGUNTA NUMERO 2-->
+
+    <div id="2" class="titulo_boton">
         ¿Por qué elegir Ixhua?
-      <a style='cursor: pointer;' onClick="muestra_oculta('contenido2')" title="" class="boton_mostrar">  +  </a>
+        <a style='cursor: pointer;' onClick="muestra_oculta('contenido2')" title="" class="boton_mostrar"> + </a>
     </div>
-   
-    <div id="contenido2" class= "contenido">
-    <p>Ixhua es la mejor manera de obtener liquidez para gastos imprevistos.
-        Nosotros no cobramos intereses, solo pagas una comisión de 49 pesos + iva por adelanto! 
-        Además somos la primer plataforma digital de préstamos personales con impacto social, un porcentaje de las utilidades son donadas a asociaciones que 
-        apoyan a los sectores salud, medio ambiente, educación y cultura del país. </p>
-        </div>
 
+    <div id="contenido2" class="contenido">
+        <p>Ixhua es la mejor manera de obtener liquidez para gastos imprevistos.
+            Nosotros no cobramos intereses, solo pagas una comisión de 49 pesos + iva por adelanto!
+            Además somos la primer plataforma digital de préstamos personales con impacto social, un porcentaje de las
+            utilidades son donadas a asociaciones que
+            apoyan a los sectores salud, medio ambiente, educación y cultura del país. </p>
+    </div>
 
+    <!--PREGUNTA NUMERO 3-->
 
-</section>
+    <br>
+    <div id="3" class="titulo_boton">
+        ¿Cómo funciona Ixhua?
+        <a style='cursor: pointer;' onClick="muestra_oculta('contenido3')" title="" class="boton_mostrar"> + </a>
+    </div>
+
+    <div id="contenido3" class="contenido">
+        <p>Mediante nuestra plataforma te otrogamos adelantos de una parte de tu nómina sin intereses.
+            El primer adelanto es de máximo $1,000 pesos y por cada pago puntual, tu línea de crédito puede aumentar
+            $200
+            pesos, sin exceder el 25% del sueldo mensual que recibes de nómina en tu cuenta o el máximo permitido, que
+            es
+            de $8,000 pesos.
+
+            El costo por cada anticipo es de $49 + IVA ¡fijos!. Esto independientemente de la cantidad que quieras
+            adelantar 😄
+
+            Para acceder a tu adelanto te pedimos los siguientes requisitos indispensables:
+
+            - Llevar más de 6 meses de antigüedad en tu empleo actual.
+            - Tener un ingreso mínimo de $2,000 pesos mensuales libres.
+            - Que la empresa donde trabajas te pague por medio de deposito o transferencia bancaria.
+
+            En caso de cumplirlos, el primer paso es registrarte en ixhua.mx para activar tu cuenta y a continuación
+            podrás hacer tu solicitud!
+        </p>
+    </div>
+
+    </section>
 
 </body>
