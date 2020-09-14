@@ -81,7 +81,8 @@ h1{
     vertical-align: middle;
    }
  
-   #contenido{
+    .contenido{
+    display:none;
     float: inline-start; 
     /*clear:both;*/
     margin-left: 5%;
