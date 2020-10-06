@@ -24,14 +24,14 @@ h1{
 
 .subtemas{
 
-    background-color: rosybrown;
-    border: none;
-    color: white;
+    border-color:gainsboro;
+    background-color: white;
+    color: rosybrown;
     padding: 5%;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 100%;
+    font-size: 110%;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -40,12 +40,15 @@ h1{
     max-height: 800px;
     border-radius: 10px 10px 10px 10px;
     font-family: 'Darker Grotesque', sans-serif;
+    text-anchor: middle;
+    font-weight: bold;
  
   }
   
 .subtemas:hover{
-    background-color: #e7e7e7;}
-
+    background-color: gainsboro;
+}
+   
 .QuestionsBody{
     float: inline-start;
     border-radius: 10px 10px 10px 10px;
