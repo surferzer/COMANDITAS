@@ -5,6 +5,7 @@ body{
     background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background
 /*    background-image: url(file:///C:/Users/ayuda/Documents/ixhua%20GENERAL/IMAGEN%20DE%20MAR%C3%8DA/Mar%C3%ADa%20SVG.svg);
     background-size: unset;*/
 }
@@ -13,8 +14,21 @@ body{
 
     float: right;
     width: 25%;
-    margin-left: 25%;
+    top:1%;
+    margin-left: 70%;
+    position: fixed;
+
 }
+
+h2{
+    color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+    position: relative;
+    left: 20%;
+    font-size: 200%;
+      
+}
+
 
 h1{
     text-align: center;
@@ -24,7 +38,7 @@ h1{
 
 .subtemas{
 
-    border-color:gainsboro;
+    border-color: black;
     background-color: white;
     color: rosybrown;
     padding: 5%;
@@ -65,7 +79,7 @@ h1{
     float: inline-start; 
     padding:1%;  
     background-color: gainsboro;
-    width:40%;
+    width:55%;
     font-family:'Darker Grotesque', sans-serif;
     font-size:100%;
     font-weight:bold;
@@ -90,7 +104,7 @@ h1{
     /*clear:both;*/
     margin-left: 5%;
     padding:3%;
-    width: 35%;
+    width: 55%;
     overflow:auto;
     font-family:'Darker Grotesque', sans-serif;
     font-size:120%;
