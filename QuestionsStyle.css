@@ -5,7 +5,7 @@ body{
     background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background
+    
 /*    background-image: url(file:///C:/Users/ayuda/Documents/ixhua%20GENERAL/IMAGEN%20DE%20MAR%C3%8DA/Mar%C3%ADa%20SVG.svg);
     background-size: unset;*/
 }
@@ -14,9 +14,10 @@ body{
 
     float: right;
     width: 25%;
-    top:1%;
+    top:.5%;
     margin-left: 70%;
     position: fixed;
+
 
 }
 
@@ -24,16 +25,35 @@ h2{
     color: black;
     font-family: 'Darker Grotesque', sans-serif;
     position: relative;
-    left: 20%;
+    left: 5%;
     font-size: 200%;
-      
+    width:50%;
+    font-weight: bolder;
+     
 }
 
+hr{
+    float:left;
+    width:70%;
+}
 
 h1{
     text-align: center;
     color: black;
+    font-family: 'Darker Grotesque', sans-serif;   
+    font-weight: lighter;
+}
+
+
+h3{
     font-family: 'Darker Grotesque', sans-serif;
+    position: relative;
+    left: 5%;
+    font-size: 150%;
+    width:50%;
+    color:rgb(250, 238, 74);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: lighter;
 }
 
 .subtemas{
@@ -70,7 +90,7 @@ h1{
     max-width: 100%;
     max-height: 300%;
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
     
 
 }
@@ -79,7 +99,7 @@ h1{
     float: inline-start; 
     padding:1%;  
     background-color: gainsboro;
-    width:55%;
+    width:53%;
     font-family:'Darker Grotesque', sans-serif;
     font-size:100%;
     font-weight:bold;
@@ -112,5 +132,6 @@ h1{
     }
 
     .titleP{
-    margin-bottom: 5%;
+   
+    font-weight: bolder;
     }
