@@ -11,4 +11,8 @@ function muestra_oculta(id){
     function redireccionarPagina() {
         window.open("https://ixhua.mx/#howworks")
       }
+
+      function goToInf(){
+        window.scrollTo(0, 0)
+      }
     

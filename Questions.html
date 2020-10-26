@@ -20,7 +20,7 @@
 
     <section class="temas">
         <h1>Accesos directos</h1>
-        <input type=button class="subtemas" value="Información General"></button> <br>
+        <input type=button class="subtemas" value="Información General" onClick="goToInf()"></button> <br>
         <input type=button class="subtemas" value="Pasos a seguir" onClick="redireccionarPagina()"></button> <br>
         <input type=button class="subtemas" value="Documentación"></button> <br>
         <input type=button class="subtemas" value="Solicitud/Estatus"></button> <br>
@@ -36,7 +36,7 @@
     <section class="QuestionsBody">
 
     <!--PREGUNTA NUMERO 1-->
-<div class="InfoGral">
+<div id="infoGral">
     <div id="1" class="titulo_boton">
         1.- ¿Qué es IXHUA?
         <a style='cursor: pointer;' onClick="muestra_oculta('contenido1')" title="" class="boton_mostrar"> + </a>
@@ -75,17 +75,20 @@
 
     <div id="contenido3" class="contenido">
         <p> Mediante nuestra plataforma te otorgamos adelantos de una parte de tu nómina sin intereses.
-            El primer adelanto es de máximo $1,000 pesos y por cada pago puntual, tu línea de crédito puede aumentar $200 pesos, sin exceder el 25% del sueldo mensual que recibes en tu cuenta o el máximo permitido, que es de $8,000 pesos.
+            El primer adelanto es de máximo $1,000 pesos y por cada pago puntual, tu línea de crédito puede aumentar $200 pesos, esto sin exceder el 25% del sueldo mensual que recibes en tu cuenta o el máximo permitido, que es de $8,000 pesos.
             El costo por cada anticipo es de $49 + IVA ¡fijos! Esto independientemente de la cantidad que quieras adelantar 😄
-            
-             Para acceder a tu adelanto te pedimos los siguientes requisitos indispensables:
+            Para acceder a tu adelanto te pedimos los siguientes requisitos indispensables: 
             - Llevar más de 6 meses de antigüedad en tu empleo actual.
-            - Tener un ingreso mínimo de $2,000 pesos mensuales libres. 
+            - Tener un ingreso mínimo de $2,000 pesos mensuales libres.
             - Que la empresa donde trabajas te pague por medio de depósito o transferencia bancaria.
             
-            En caso de cumplirlos, el primer paso es registrarte en ixhua.mx para activar tu cuenta y a continuación podrás hacer tu solicitud!
+            ¡En caso de cumplirlos, el primer paso es registrarte en ixhua.mx para activar tu cuenta y a continuación podrás hacer tu solicitud!
+            Una vez realizada tu solicitud, entra a una etapa de revisión, de la cual obtendremos una respuesta en las horas subsecuentes:
+            -Si es "APROBADA" recibirás el depósito de tu adelanto en las siguientes horas.
+            -Si es "RECHAZADA" debes corregir lo que se te pide y una vez corregido, realizar una nueva solicitud.
+            El pago de tu adelanto se hace automático, ya que lo cargamos a tu cuenta el día que recibes tu próximo pago de tu nómina (según la fecha seleccionada en la solicitud) por la cantidad total adelantada más los 49 pesos más IVA de comisión (aproximadamente 57 pesos). 
+            ¡Que esperas! Solicita ya tu adelanto con ixhua.mx
             
-            Cuando haces tu solicitud y es aprobada recibirás el depósito de tu adelanto en las siguientes horas, el cual se cargará a tu cuenta el día que recibas el pago de tu nómina (depende de la fecha seleccionada) por la cantidad total adelantada más los 49 pesos más IVA de comisión aproximadamente 57 pesos) esto independientemente de la cantidad que hayas pedido =)
         </p></div>
 
           <!--PREGUNTA NUMERO 4-->
@@ -256,16 +259,275 @@
 
     <div id="contenido15" class="contenido">
         <p> Foto de tu INE o IFE por ambos lados, o foto de tu pasaporte, o bien, de tu licencia de manejo por ambos lados.
-            La foto debe ser completamente visible, de lo contrario no será admitida.</p>
-    </div>
+        </p>
     </div>
     <br>
 
+    <div id="16" class="titulo_boton">
+        Estado de cuenta
+       <a style='cursor: pointer;' onClick="muestra_oculta('contenido16')" title="" class="boton_mostrar"> + </a>
+   </div>
+
+   <div id="contenido16" class="contenido">
+       <p> Estado de cuenta en el que recibes tu nómina actualizado, es decir, que no tenga más de 60 días de antigüedad. 
+        Este documento tendrás que reemplazarlo cuando ya no esté vigente (que tenga más de 60 días de antigüedad) Y deben venir todas las hojas, en caso de tener varios archivos o fotos te sugerimos esta página para hacerlo: 
+        https://tools.pdf24.org/es/convertir-a-pdf#s=1597079636232. Da clic en las líneas de arriba a la derecha y selecciona la opción de “UNIR”, enseguida selecciona los archivos o fotos que quieres juntar y al final ponle en descargar para tener un solo archivo, ¡guárdalo y ese es el que vas a subir!
+        </p>
+   </div>
+   <br>
+
+   <div id="17" class="titulo_boton">
+    Comprobante de domicilio
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido17')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido17" class="contenido">
+   <p> Puede ser comprobante de algún servicio como luz, agua, cable, internet, estado de cuenta diferente al de tu nómina, etc.
+    El nombre debe coincidir con el tuyo o en su caso debe ser de un familiar directo y coincidir con la dirección que capturaste en el formulario.
+    Si rentas, lo mejor es subir un comprobante de algún servicio a tu nombre, de lo contrario necesitamos la INE del titular del servicio por ambos lados.
+    El comprobante no debe tener una antigüedad mayor a 90 días y tendrá que estarse actualizando en la plataforma cuando ya esté vencido para la autorización del adelanto.    
+    </p>
+</div>
+<br>
+
+<div id="18" class="titulo_boton">
+    Nóminas
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido18')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido18" class="contenido">
+   <p>Las nóminas deben ser las últimas tres, si subes de otros meses no son válidas. Necesitamos que cargues los recibos de los tres últimos pagos que te hicieron en tu trabajo.
+    La foto debe ser clara y deben actualizarse cada que realices una solicitud. 
+    </p>
+</div>
+<br>
+
+<div id="19" class="titulo_boton">
+    Selfie
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido19')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido19" class="contenido">
+   <p>Foto de tu rostro con tu INE (pasaporte o licencia) al lado de tu cara o abajo, sin taparla y que se vea clara.
+    </p>
+</div>
+<br>
+<strong><p>Cada foto debe ser completamente visible, de lo contrario no será admitido el documento.</p></strong>
+
+    </div>
+</section>
+
+  <!-- TERMINA SECCIÓN DE DOCUMENTOS -->
+<br><br><hr>
+
+  <!-- INICIA SECCIÓN DE SOLICITUD/ESTATUS -->
+  <br>
+  <h2>SOLICITUD / ESTATUS</h2>
+
+  <!--PREGUNTA NUMERO 14-->
+<br>
+<div id="20" class="titulo_boton">
+     ¿Dónde veo el estatus de mi solicitud?
+    <a style='cursor: pointer;' onClick="muestra_oculta('contenido20')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido20" class="contenido">
+    <p>Para darte cuenta como va tu solicitud da click en "INICIAR SESIÓN" y ve a la sección de "HISTORIAL" ahí vienen todos
+        tus adelantos y su estatus. 
+        
+        El estatus "EN TRÁMITE" significa que tu solicitud está en revisión en el departamento de análisis.
+        El estatus "APROBADO" significa que tu adelanto ya está autorizado y se te depositará en las próximas horas
+        El estatus "RECHAZADO" significa que tu solicitud se rechazó, pero los errores pueden ser corregidos y hacer una nueva
+        A menos que la causa de rechazo sea "NO PODEMOS ATENDERTE" ya que ésta significa que no puedes acceder al adelanto por
+        alguna razón de peso.
+            </p>
+</div>
+
+<br>
+<div id="21" class="titulo_boton">
+    ¿Cuánto tarda en revisión mi trámite?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido21')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido21" class="contenido">
+   <p>No hay un tiempo específico pero en las próximas horas debes tener noticias de tu solicitud o a más tardar al día siguiente.
+           </p>
+</div>
+
+
+<br>
+<div id="22" class="titulo_boton">
+    ¿Cuándo recibiré el depósito de mi adelanto?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido22')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido22" class="contenido">
+   <p>Si tu solicitud quedó aprobada antes de la 1pm, tu depósito quedará antes de las 2pm.
+    Si fué aprobada antes de las 6pm, tu depósito quedará antes de las 7pm.
+    Y si quedó aprobada después de las 7pm lo estarás recibiendo antes de las 2pm del día siguiente.
+           </p>
+</div>
+
+<br>
+<div id="23" class="titulo_boton">
+    ¿Puedo hacer mi solicitud sin tener recibos de nómina?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido23')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido23" class="contenido">
+   <p>No =( lo siento, es un requisito indispensable para ser candidato al adelanto.
+           </p>
+</div>
+
+
+<br>
+<div id="24" class="titulo_boton">
+    ¿Cuándo puedo hacer una nueva solicitud?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido24')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido24" class="contenido">
+   <p>En cuanto el pago de tu adelanto quede registrado podrás hacer una nueva :)
+           </p>
+</div>
 
 
 
+<br>
+<div id="25" class="titulo_boton">
+    ¿Que vigencias tienen los documentos?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido25')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido25" class="contenido">
+   <p>-Estado de cuenta: 60 días
+    -Comprobante de domicilio: 90 días
+    -Referencias: 60 días
+    -Nóminas: Deben actualizarse constantemente para siempre tener cargadas las últimas 3
+    -INE: Mientras esté verificada como válida en el INE
+    -Selfie: Mientras la INE sea válida
+           </p>
+</div>
 
 
-    </section>
+<br>
+<div id="26" class="titulo_boton">
+    ¿Qué pasa si mi referencia no contesta?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido26')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido26" class="contenido">
+   <p>Se da un tiempo de 12 horas para tener dicha respuesta de la encuesta enviada, si no la recibimos se rechazará tu solicitud. De esta manera podrás cambiar tus referencias 
+    al hacer la nueva.  
+           </p>
+</div>
+
+
+<br>
+<div id="27" class="titulo_boton">
+    ¿Puedo cambiar mis referencias?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido27')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido27" class="contenido">
+   <p>Sí! haz tu nueva solicitud y cambia ahí la referencia!
+    Si ya tienes solicitud en curso puedes contactarnos para cambiarla por whatsapp. 
+           </p>
+</div>
+
+
+<br>
+<div id="28" class="titulo_boton">
+    
+¿Es posible que me presten más?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido28')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido28" class="contenido">
+   <p>No, la cantidad inicial es de mil pesos, sin excepciones. Aunque después de cada pago puntual puedes pedir tu aumento de 200 pesos, siempre y cuando no pase del 25% 
+    de tu sueldo mensual neto.
+           </p>
+</div>
+
+
+<br>
+<div id="29" class="titulo_boton">
+    
+
+    Mis referencias no tienen whatsapp!
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido29')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido29" class="contenido">
+   <p>En dado caso que así sea, debes notificarnos para hacerles una llamada telefónica o puedes cambiar de referencia.
+           </p></div>
+
+
+         <br>
+<div id="30" class="titulo_boton">
+    
+
+    ¿Cómo puedo conseguir mi clabe interbancaria?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido30')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido30" class="contenido">
+   <p>Este dato te lo proporciona tu banco, son 18 dígitos y también viene en tu estado de cuenta o puedes consultarlo en tu app o por el portal de internet de tu banco.          
+   </p></div>  
+
+
+   <br>
+<div id="31" class="titulo_boton">
+¿Cómo puedo conseguir mi estado de cuenta?
+   <a style='cursor: pointer;' onClick="muestra_oculta('contenido31')" title="" class="boton_mostrar"> + </a>
+</div>
+
+<div id="contenido31" class="contenido">
+   <p>Este documento te lo otorga el banco, puedes descargarlo por internet o solicitarlo mediante tu app o teléfono.
+    También puedes tomarle fotos a tu estado de cuenta impreso y juntarlas para cargarlas en un solo archivo.          
+   </p></div>  
+
+
+   <br>
+   <div id="32" class="titulo_boton">
+  
+¿Que me sirve de comprobante de domicilio?
+      <a style='cursor: pointer;' onClick="muestra_oculta('contenido32')" title="" class="boton_mostrar"> + </a>
+   </div>
+   
+   <div id="contenido32" class="contenido">
+      <p>Tus recibos de la luz, cable, internet, agua o un estado de cuenta de una tarjeta diferente a donde recibes tu nómina.
+        Ten en cuenta que debe estar a tu nombre o de un familiar directo. De lo contrario necesitamos la INE del titular del servicio por ambos lados o foto del contrato de arrendamiento.    
+      </p></div>  
+   
+
+      <br>
+   <div id="33" class="titulo_boton">
+      ¿Cómo puedo conseguir mis nóminas?
+      <a style='cursor: pointer;' onClick="muestra_oculta('contenido33')" title="" class="boton_mostrar"> + </a>
+   </div>
+   
+   <div id="contenido33" class="contenido">
+      <p>Las nóminas son los recibos de pago que te da la empresa donde trabajas y tienes que subir las últimas 3 siempre, de lo contrario no serán válidas.
+        Las puedes solicitar a tu empresa, en dado caso de que no las tengas.
+      </p></div>  
+
+
+      
+      <br>
+   <div id="34" class="titulo_boton">
+      
+¿Cómo puedo juntar mis fotos o archivos?
+      <a style='cursor: pointer;' onClick="muestra_oculta('contenido34')" title="" class="boton_mostrar"> + </a>
+   </div>
+   
+   <div id="contenido34" class="contenido">
+      <p>Hay muchos programas que nos ayudan a poder juntar archivos o fotos, te recomiendo el siguiente que es el que yo utilizo:
+        https://tools.pdf24.org/es/convertir-a-pdf#s=1597079636232 
+        Esta página te permite juntar los archivos que necesites. Es importante que en el menú de arriba a la derecha des click en "UNIR", despues selecciona los archivos
+        que quieres juntar y al final descarga el documento y guárdalo en tu dispositivo. Ese archivo es el que debes cargar!
+      </p></div>  
+
+
 
 </body>
