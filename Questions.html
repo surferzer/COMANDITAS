@@ -12,6 +12,7 @@
 <body>
     <app-header></app-header>
     <div class="titleP">
+        
         <h2>PREGUNTAS FRECUENTES (FAQ's)</h2>
         <h3>¿Qué quieres preguntarle a María?</h3>
     </div>
@@ -22,7 +23,7 @@
         <h1>Accesos directos</h1>
         <input type=button class="subtemas" value="Información General" onClick="goToInf()"></button> <br>
         <input type=button class="subtemas" value="Pasos a seguir" onClick="redireccionarPagina()"></button> <br>
-        <input type=button class="subtemas" value="Documentación"></button> <br>
+        <input type=button class="subtemas" value="Documentación" onClick="goToDocs()"></button> <br>
         <input type=button class="subtemas" value="Solicitud/Estatus"></button> <br>
         <input type=button class="subtemas" value="Información de pago"></button> <br>
         <input type=button class="subtemas" value="Motivos de rechazo"></button> <br>
@@ -292,7 +293,7 @@
         <hr>
         <!-- INICIA SECCIÓN DE DOCUMENTOS -->
 
-        <div class="docs">
+        <div id="docs">
             <h2>INFORMACIÓN DETALLADA DE CADA DOCUMENTO</h2>
             <br>
             <div id="15" class="titulo_boton">

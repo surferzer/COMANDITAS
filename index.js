@@ -16,3 +16,8 @@ function muestra_oculta(id){
         window.scrollTo(0, 0)
       }
     
+      function goToDocs(){
+        
+elmntToView.scrollIntoView("docs"); 
+      }
+    

@@ -5,7 +5,9 @@ body{
     background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    background-image: url("file:///C:/Users/ayuda/Documents/ixhua%20GENERAL/Imagen%20de%20MAR%C3%8DA/Mari%CC%81a%20SVG%20sin%20fondo.svg" );
+    background-size: 50% 25%;
+    background-position-x: center;
 /*    background-image: url(file:///C:/Users/ayuda/Documents/ixhua%20GENERAL/IMAGEN%20DE%20MAR%C3%8DA/Mar%C3%ADa%20SVG.svg);
     background-size: unset;*/
 }
@@ -52,7 +54,7 @@ h3{
     left: 5%;
     font-size: 150%;
     width:50%;
-    color:rgb(250, 238, 74);
+    color:rgb(252, 209, 17);
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: lighter;
 }
