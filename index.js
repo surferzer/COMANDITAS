@@ -17,7 +17,31 @@ function muestra_oculta(id){
       }
     
       function goToDocs(){
-        
-elmntToView.scrollIntoView("docs"); 
+        var elmnt = document.getElementById("docs");
+        elmnt.scrollIntoView();
       }
     
+      function goToSol(){
+        var elmnt = document.getElementById("sol");
+        elmnt.scrollIntoView();
+      }
+
+      function goToPay(){
+        var elmnt = document.getElementById("pay");
+        elmnt.scrollIntoView();
+      }
+
+      function goToRej(){
+        var elmnt = document.getElementById("rej");
+        elmnt.scrollIntoView();
+      }
+
+      function goToWrong(){
+        var elmnt = document.getElementById("wrong");
+        elmnt.scrollIntoView();
+      }
+
+      function goToMary(){
+        var elmnt = document.getElementById("mary");
+        elmnt.scrollIntoView();
+      }

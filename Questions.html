@@ -24,11 +24,11 @@
         <input type=button class="subtemas" value="Información General" onClick="goToInf()"></button> <br>
         <input type=button class="subtemas" value="Pasos a seguir" onClick="redireccionarPagina()"></button> <br>
         <input type=button class="subtemas" value="Documentación" onClick="goToDocs()"></button> <br>
-        <input type=button class="subtemas" value="Solicitud/Estatus"></button> <br>
-        <input type=button class="subtemas" value="Información de pago"></button> <br>
-        <input type=button class="subtemas" value="Motivos de rechazo"></button> <br>
-        <input type=button class="subtemas" value="Errores"></button> <br>
-        <input type=button class="subtemas" value="Días y horarios de atención"></button> <br>
+        <input type=button class="subtemas" value="Solicitud/Estatus" onClick="goToSol()"></button> <br>
+        <input type=button class="subtemas" value="Información de pago" onClick="goToPay()"></button> <br>
+        <input type=button class="subtemas" value="Motivos de rechazo" onClick="goToRej()"></button> <br>
+        <input type=button class="subtemas" value="Errores" onClick="goToWrong()"></button> <br>
+        <input type=button class="subtemas" value="Días y horarios de atención" onClick="goToMary()"></button> <br>
 
         <!--PREGUNTAS-->
 
@@ -387,6 +387,7 @@
 
     <!-- INICIA SECCIÓN DE SOLICITUD/ESTATUS -->
     <br>
+    <div id="sol">
     <h2>SOLICITUD / ESTATUS</h2>
 
     <!--PREGUNTA NUMERO 14-->
@@ -616,6 +617,7 @@
                 debes cargar!
             </p>
         </div>
+    </div>
     </section>
 
     <!-- TERMINA SECCIÓN DE SOLICITUD / ESTATUS -->
@@ -625,6 +627,7 @@
     <!-- INICIA SECCIÓN DE INFORMACIÓN DE PAGO -->
     <br>
     <section>
+        <div id="pay">
         <h2>INFORMACIÓN DE PAGO</h2>
         <br>
 
@@ -785,14 +788,14 @@
                 Con estos datos haremos una carta que nos puedes firmar electrónicamente para que quede registrada.
             </p>
         </div>
-
+    </div>
 
     </section>
 
     <!-- TERMINA SECCIÓN DE INFORMACIÓN DE PAGO -->
     <br><br>
     <hr>
-
+<div id="rej">
     <!-- INICIA SECCIÓN DE MOTIVOS DE RECHAZO -->
     <br>
     <section>
@@ -882,7 +885,7 @@
                 razón de peso por la cual no te puede ser otorgado el adelanto.
             </p>
         </div>
-
+    </div>
     </section>
 
     <!-- TERMINA SECCIÓN DE MOTIVOS DE RECHAZO -->
@@ -892,6 +895,7 @@
     <!-- INICIA SECCIÓN DE ERRORES -->
     <br>
     <section>
+        <div id="wrong">
         <h2>ERRORES</h2>
         <br>
 
@@ -1019,7 +1023,7 @@
                 campo. Revisa detalladamente tu so!licitud
             </p>
         </div>
-
+    </div>
     </section>
 
     <!-- TERMINA SECCIÓN DE ERRORES -->
@@ -1029,6 +1033,7 @@
     <!-- INICIA SECCIÓN DE DIAS Y HORARIOS DE ATENCIÓN -->
     <br>
     <section>
+        <div id="mary">
         <h2>DÍAS Y HORARIOS DE ATENCIÓN</h2>
         <br>
 
@@ -1069,6 +1074,6 @@
             <p>Puedes escribirme por whatsapp al 3330722026 o por correo electrónico a contacto@ixhua.mx!
             </p>
         </div>
-
+    </div>
 </section>
 </body>
