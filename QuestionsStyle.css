@@ -17,7 +17,7 @@ body{
 
     float: right;
     width: 25%;
-    top:.5%;
+    top:5%;
     margin-left: 70%;
     position: fixed;
     
@@ -69,11 +69,11 @@ h4{
     border-color: black;
     background-color: white;
     color: rosybrown;
-    padding: 5%;
+    padding: 4%;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 110%;
+    font-size: 100%;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
