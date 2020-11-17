@@ -45,3 +45,5 @@ function muestra_oculta(id){
         var elmnt = document.getElementById("mary");
         elmnt.scrollIntoView();
       }
+
+
